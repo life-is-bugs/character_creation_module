@@ -4,6 +4,8 @@ from random import randint
 DEFAULT_ATTACK = 5
 DEFAULT_DEFENCE = 10
 DEFAULT_STAMINA = 80
+
+
 class Character:
 
     BRIEF_DESC_CHAR_CLASS = 'отважный любитель приключений'
@@ -11,6 +13,7 @@ class Character:
     RANGE_VALUE_DEFENCE = (1, 5)
     SPECIAL_SKILL = 'Удача'
     SPECIAL_BUFF = 15
+
     def __init__(self, name):
         self.name = name
 
@@ -71,6 +74,7 @@ def choice_char_class(char_name: str) -> Character:
                                'или любую другую кнопку, '
                                'чтобы выбрать другого персонажа ').lower()
     return char_class
+
 
 def start_training(character):
     """Принимает на вход имя и класс персонажа.
